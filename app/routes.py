@@ -6,14 +6,13 @@ from flask_login import (
 from werkzeug.urls import url_parse
 from app import app, db
 from app.forms import LoginForm, RegistrationForm, EditProfileForm
-from app.models import User 
+from app.models import User
 
 
 @app.route('/')
 @app.route('/index')
 @login_required
 def index():
-    user = {'username': 'Byungmook'}
     posts = [
         {
             'author': {'username': 'John'},
@@ -24,7 +23,7 @@ def index():
             'body': 'The Avengers movie was so cool!'
         }
     ]
-    return render_template('index.html', title='Home',posts=posts)
+    return render_template('index.html', title='Home', posts=posts)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -71,8 +70,8 @@ def register():
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
     posts = [
-        { 'author' : user, 'body' : 'Test post #1' },
-        { 'author' : user, 'body' : 'Test post #2' }
+        {'author': user, 'body': 'Test post #1'},
+        {'author': user, 'body': 'Test post #2'}
     ]
     return render_template('user.html', user=user, posts=posts)
 

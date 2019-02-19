@@ -5,7 +5,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from app import db, login
 
 
-class User(UserMixin, db.Model):    
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), index=True, unique=True)
     email = db.Column(db.String(120), index=True, unique=True)
@@ -21,8 +21,8 @@ class User(UserMixin, db.Model):
         self.password_hash = generate_password_hash(password)
 
     def check_password(self, password):
-        # forms를 통해 User 생성시 password없을 가능성 없지만, 
-        # flask shell을 통해 User 생성시 password가 없어 에러 발생 가능 
+        # forms를 통해 User 생성시 password없을 가능성 없지만,
+        # flask shell을 통해 User 생성시 password가 없어 에러 발생 가능
         if self.password_hash is None:
             print("User {} doesn't have password_hash".format(self.username))
             return False
