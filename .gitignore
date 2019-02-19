@@ -106,3 +106,4 @@ venv.bak/
 
 # Flask
 app.db
+logs/*
