@@ -1,0 +1,210 @@
+# Korean translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-02-20 10:50+0900\n"
+"PO-Revision-Date: 2019-02-19 19:46+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: app/__init__.py:22
+msgid "Please log in to access this page."
+msgstr "이 페이지에 접속하기 위해 로그인해주세요."
+
+#: app/email.py:22
+msgid "[Microblog] Reset Your Password"
+msgstr "[Microblog] 비밀번호 변경"
+
+#: app/forms.py:11 app/forms.py:18 app/forms.py:38
+msgid "Username"
+msgstr "사용자 이름"
+
+#: app/forms.py:12 app/forms.py:20 app/forms.py:65
+msgid "Password"
+msgstr "비밀번호"
+
+#: app/forms.py:13
+msgid "Remember Me"
+msgstr "로그인 상태 유지"
+
+#: app/forms.py:14 app/templates/login.html:5
+msgid "Sign In"
+msgstr "로그인"
+
+#: app/forms.py:19 app/forms.py:60
+msgid "Email"
+msgstr "이메일"
+
+#: app/forms.py:22 app/forms.py:67
+msgid "Repeat Password"
+msgstr "비밀번호 재확인"
+
+#: app/forms.py:24 app/templates/register.html:5
+msgid "Register"
+msgstr "가입"
+
+#: app/forms.py:29 app/forms.py:50
+msgid "Please use a different username."
+msgstr "이미 사용중인 사용자 이름입니다."
+
+#: app/forms.py:34
+msgid "Please use a different email address."
+msgstr "이미 사용중인 이메일입니다."
+
+#: app/forms.py:39
+msgid "About me"
+msgstr "자기소개"
+
+#: app/forms.py:40 app/forms.py:56
+msgid "Submit"
+msgstr "등록"
+
+#: app/forms.py:54
+msgid "Say something"
+msgstr "무슨 생각을 하고 계신가요?"
+
+#: app/forms.py:61 app/forms.py:68
+msgid "Request Password Reset"
+msgstr "비밀번호 초기화 요청"
+
+#: app/routes.py:24
+msgid "Your post is now live!"
+msgstr "포스트가 업로드되었습니다."
+
+#: app/routes.py:46
+msgid "Invalid username or password"
+msgstr "유효하지 않은 사용자 이름 (또는) 비밀번호 입니다."
+
+#: app/routes.py:72
+msgid "Congratulations, you are now a registered user!"
+msgstr "축하합니다. 가입이 완료되었습니다!"
+
+#: app/routes.py:108
+msgid "Your changes have been saved."
+msgstr "프로필 수정 사항이 저장되었습니다."
+
+#: app/routes.py:122 app/routes.py:138
+msgid "User {} not found."
+msgstr "유저 {}(이)가 발견되지 않습니다."
+
+#: app/routes.py:125
+msgid "You cannot follow yourself!"
+msgstr "본인 스스로를 팔로우할 수 없습니다!"
+
+#: app/routes.py:129
+msgid "You are following {}!"
+msgstr "{}을(를) 팔로우하였습니다!"
+
+#: app/routes.py:141
+msgid "You cannot unfollow yourself!"
+msgstr "본인 스스로를 팔로우 해제할 수 없습니다!"
+
+#: app/routes.py:145
+msgid "You are not following {}."
+msgstr "{}을(를) 팔로우를 해제하였습니다."
+
+#: app/routes.py:172
+msgid "Check your email for the instructions to reset your password"
+msgstr "비밀번호 초기화 이메일이 발송되었습니다."
+
+#: app/routes.py:189
+msgid "Your password has been reset."
+msgstr "비밀번호가 초기화되었습니다."
+
+#: app/templates/404.html:4
+msgid "File Not Found"
+msgstr "페이지를 찾을 수 없습니다."
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s님이 %(when)s에 게시하였습니다."
+
+#: app/templates/base.html:21
+msgid "Home"
+msgstr "홈"
+
+#: app/templates/base.html:22
+msgid "Explore"
+msgstr "탐색"
+
+#: app/templates/base.html:26
+msgid "Login"
+msgstr "로그인"
+
+#: app/templates/base.html:28
+msgid "Profile"
+msgstr "프로필"
+
+#: app/templates/base.html:29
+msgid "Logout"
+msgstr "로그아웃"
+
+#: app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "프로필 수정"
+
+#: app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr "안녕하세요, %(username)s님!"
+
+#: app/templates/index.html:28 app/templates/user.html:31
+msgid "Newer posts"
+msgstr "다음 페이지"
+
+#: app/templates/index.html:33 app/templates/user.html:36
+msgid "Older posts"
+msgstr "이전 페이지"
+
+#: app/templates/login.html:33
+msgid "New User?"
+msgstr "아직 계정이 없으신가요?"
+
+#: app/templates/login.html:35
+msgid "Click to Register!"
+msgstr "회원가입하기"
+
+#: app/templates/login.html:38
+msgid "Forgot Your Password?"
+msgstr "비밀번호를 잊으셨나요?"
+
+#: app/templates/login.html:40
+msgid "Click to Reset It"
+msgstr "초기화하기"
+
+#: app/templates/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "비밀번호 초기화"
+
+#: app/templates/user.html:8
+msgid "User"
+msgstr "사용자"
+
+#: app/templates/user.html:11
+msgid "Last seen on"
+msgstr "최근 접속 시간"
+
+#: app/templates/user.html:13
+msgid "followers"
+msgstr "팔로워"
+
+#: app/templates/user.html:13
+msgid "following"
+msgstr "팔로잉"
+
+#: app/templates/user.html:15
+msgid "Edit your profile"
+msgstr "프로필 수정"
+
