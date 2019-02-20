@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-20 15:01+0900\n"
+"POT-Creation-Date: 2019-02-20 17:17+0900\n"
 "PO-Revision-Date: 2019-02-19 19:46+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: app/__init__.py:21
+#: app/__init__.py:22
 msgid "Please log in to access this page."
 msgstr "이 페이지에 접속하기 위해 로그인해주세요."
 
@@ -34,7 +34,7 @@ msgstr "에러 : 번역서비스 요청이 응답하지 않습니다."
 msgid "[Microblog] Reset Your Password"
 msgstr "[Microblog] 비밀번호 변경"
 
-#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:9
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:10
 msgid "Username"
 msgstr "사용자 이름"
 
@@ -63,7 +63,7 @@ msgstr "비밀번호 재확인"
 msgid "Register"
 msgstr "회원가입"
 
-#: app/auth/forms.py:27 app/main/forms.py:22
+#: app/auth/forms.py:27 app/main/forms.py:23
 msgid "Please use a different username."
 msgstr "이미 사용중인 사용자 이름입니다."
 
@@ -95,59 +95,63 @@ msgstr "비밀번호 초기화"
 msgid "Your password has been reset."
 msgstr "비밀번호가 초기화되었습니다."
 
-#: app/main/forms.py:10
+#: app/main/forms.py:11
 msgid "About me"
 msgstr "자기소개"
 
-#: app/main/forms.py:12 app/main/forms.py:28
+#: app/main/forms.py:13 app/main/forms.py:29
 msgid "Submit"
 msgstr "등록"
 
-#: app/main/forms.py:26
+#: app/main/forms.py:27
 msgid "Say something"
 msgstr "무슨 생각을 하고 계신가요?"
 
-#: app/main/routes.py:35
+#: app/main/forms.py:33 app/main/routes.py:149
+msgid "Search"
+msgstr "검색"
+
+#: app/main/routes.py:36
 msgid "Your post is now live!"
 msgstr "포스트가 업로드되었습니다."
 
-#: app/main/routes.py:44 app/templates/base.html:23
+#: app/main/routes.py:45 app/templates/base.html:23
 msgid "Home"
 msgstr "홈"
 
-#: app/main/routes.py:59 app/templates/base.html:24
+#: app/main/routes.py:60 app/templates/base.html:24
 msgid "Explore"
 msgstr "탐색"
 
-#: app/main/routes.py:76 app/templates/base.html:30
+#: app/main/routes.py:77 app/templates/base.html:39
 msgid "Profile"
 msgstr "프로필"
 
-#: app/main/routes.py:87
+#: app/main/routes.py:88
 msgid "Your changes have been saved."
 msgstr "프로필 수정 사항이 저장되었습니다."
 
-#: app/main/routes.py:92 app/templates/edit_profile.html:5
+#: app/main/routes.py:93 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "프로필 수정"
 
-#: app/main/routes.py:101 app/main/routes.py:117
+#: app/main/routes.py:102 app/main/routes.py:118
 msgid "User {} not found."
 msgstr "유저 {}(이)가 발견되지 않습니다."
 
-#: app/main/routes.py:104
+#: app/main/routes.py:105
 msgid "You cannot follow yourself!"
 msgstr "본인 스스로를 팔로우할 수 없습니다!"
 
-#: app/main/routes.py:108
+#: app/main/routes.py:109
 msgid "You are following {}!"
 msgstr "{}을(를) 팔로우하였습니다!"
 
-#: app/main/routes.py:120
+#: app/main/routes.py:121
 msgid "You cannot unfollow yourself!"
 msgstr "본인 스스로를 팔로우 해제할 수 없습니다!"
 
-#: app/main/routes.py:124
+#: app/main/routes.py:125
 msgid "You are not following {}."
 msgstr "{}을(를) 팔로우를 해제하였습니다."
 
@@ -164,15 +168,15 @@ msgstr "변역하기"
 msgid "Welcome to Microblog"
 msgstr "Microblog에 오신 것을 환영합니다."
 
-#: app/templates/base.html:28
+#: app/templates/base.html:37
 msgid "Login"
 msgstr "로그인"
 
-#: app/templates/base.html:31
+#: app/templates/base.html:40
 msgid "Logout"
 msgstr "로그아웃"
 
-#: app/templates/base.html:68
+#: app/templates/base.html:77
 msgid "Error: Could not contact server."
 msgstr "서버가 응답하지 않습니다."
 
@@ -188,6 +192,18 @@ msgstr "다음 페이지"
 #: app/templates/index.html:33 app/templates/user.html:36
 msgid "Older posts"
 msgstr "이전 페이지"
+
+#: app/templates/search.html:4
+msgid "Search Results"
+msgstr "검색 결과"
+
+#: app/templates/search.html:13
+msgid "Previous results"
+msgstr "이전 검색결과"
+
+#: app/templates/search.html:18
+msgid "Next results"
+msgstr "다음 검색결과"
 
 #: app/templates/user.html:8
 msgid "User"
