@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-20 12:55+0900\n"
+"POT-Creation-Date: 2019-02-20 15:01+0900\n"
 "PO-Revision-Date: 2019-02-19 19:46+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -18,153 +18,138 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: app/__init__.py:22
+#: app/__init__.py:21
 msgid "Please log in to access this page."
 msgstr "이 페이지에 접속하기 위해 로그인해주세요."
-
-#: app/email.py:22
-msgid "[Microblog] Reset Your Password"
-msgstr "[Microblog] 비밀번호 변경"
-
-#: app/forms.py:11 app/forms.py:18 app/forms.py:38
-msgid "Username"
-msgstr "사용자 이름"
-
-#: app/forms.py:12 app/forms.py:20 app/forms.py:65
-msgid "Password"
-msgstr "비밀번호"
-
-#: app/forms.py:13
-msgid "Remember Me"
-msgstr "로그인 상태 유지"
-
-#: app/forms.py:14 app/routes.py:59 app/templates/login.html:5
-msgid "Sign In"
-msgstr "로그인"
-
-#: app/forms.py:19 app/forms.py:60
-msgid "Email"
-msgstr "이메일"
-
-#: app/forms.py:22 app/forms.py:67
-msgid "Repeat Password"
-msgstr "비밀번호 재확인"
-
-#: app/forms.py:24 app/routes.py:80 app/templates/register.html:5
-msgid "Register"
-msgstr "회원가입"
-
-#: app/forms.py:29 app/forms.py:50
-msgid "Please use a different username."
-msgstr "이미 사용중인 사용자 이름입니다."
-
-#: app/forms.py:34
-msgid "Please use a different email address."
-msgstr "이미 사용중인 이메일입니다."
-
-#: app/forms.py:39
-msgid "About me"
-msgstr "자기소개"
-
-#: app/forms.py:40 app/forms.py:56
-msgid "Submit"
-msgstr "등록"
-
-#: app/forms.py:54
-msgid "Say something"
-msgstr "무슨 생각을 하고 계신가요?"
-
-#: app/forms.py:61 app/forms.py:68
-msgid "Request Password Reset"
-msgstr "비밀번호 초기화 요청"
-
-#: app/routes.py:30
-msgid "Your post is now live!"
-msgstr "포스트가 업로드되었습니다."
-
-#: app/routes.py:39 app/templates/base.html:23
-msgid "Home"
-msgstr "홈"
-
-#: app/routes.py:52
-msgid "Invalid username or password"
-msgstr "유효하지 않은 사용자 이름 (또는) 비밀번호 입니다."
-
-#: app/routes.py:78
-msgid "Congratulations, you are now a registered user!"
-msgstr "축하합니다. 회원가입이 완료되었습니다!"
-
-#: app/routes.py:96 app/templates/base.html:30
-msgid "Profile"
-msgstr "프로필"
-
-#: app/routes.py:115
-msgid "Your changes have been saved."
-msgstr "프로필 수정 사항이 저장되었습니다."
-
-#: app/routes.py:120 app/templates/edit_profile.html:5
-msgid "Edit Profile"
-msgstr "프로필 수정"
-
-#: app/routes.py:129 app/routes.py:145
-msgid "User {} not found."
-msgstr "유저 {}(이)가 발견되지 않습니다."
-
-#: app/routes.py:132
-msgid "You cannot follow yourself!"
-msgstr "본인 스스로를 팔로우할 수 없습니다!"
-
-#: app/routes.py:136
-msgid "You are following {}!"
-msgstr "{}을(를) 팔로우하였습니다!"
-
-#: app/routes.py:148
-msgid "You cannot unfollow yourself!"
-msgstr "본인 스스로를 팔로우 해제할 수 없습니다!"
-
-#: app/routes.py:152
-msgid "You are not following {}."
-msgstr "{}을(를) 팔로우를 해제하였습니다."
-
-#: app/routes.py:166 app/templates/base.html:24
-msgid "Explore"
-msgstr "탐색"
-
-#: app/routes.py:179
-msgid "Check your email for the instructions to reset your password"
-msgstr "비밀번호 초기화 이메일이 발송되었습니다."
-
-#: app/routes.py:182 app/templates/reset_password_request.html:5
-msgid "Reset Password"
-msgstr "비밀번호 초기화"
-
-#: app/routes.py:196
-msgid "Your password has been reset."
-msgstr "비밀번호가 초기화되었습니다."
 
 #: app/translate.py:10
 msgid "Error: the translation service is not configured."
 msgstr "에러 : 번역서비스 설정이 안되어 있습니다."
 
-#: app/translate.py:17
+#: app/translate.py:18
 msgid "Error: the translation service failed."
 msgstr "에러 : 번역서비스 요청이 응답하지 않습니다."
 
-#: app/templates/404.html:4
-msgid "File Not Found"
-msgstr "페이지를 찾을 수 없습니다."
+#: app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
+msgstr "[Microblog] 비밀번호 변경"
 
-#: app/templates/404.html:5 app/templates/500.html:6
-msgid "Back"
-msgstr "뒤로가기"
+#: app/auth/forms.py:9 app/auth/forms.py:16 app/main/forms.py:9
+msgid "Username"
+msgstr "사용자 이름"
 
-#: app/templates/500.html:4
-msgid "An unexpected error has occurred"
-msgstr "예상치 못한 오류가 발생했습니다."
+#: app/auth/forms.py:10 app/auth/forms.py:18 app/auth/forms.py:41
+msgid "Password"
+msgstr "비밀번호"
 
-#: app/templates/500.html:5
-msgid "The administrator has been notified. Sorry for the inconvenience!"
-msgstr "관리자에게 오류가 전달되었고 곧 수정될 예정입니다. 불편함을 드려 죄송합니다!"
+#: app/auth/forms.py:11
+msgid "Remember Me"
+msgstr "로그인 상태 유지"
+
+#: app/auth/forms.py:12 app/auth/routes.py:28 app/templates/auth/login.html:5
+msgid "Sign In"
+msgstr "로그인"
+
+#: app/auth/forms.py:17 app/auth/forms.py:36
+msgid "Email"
+msgstr "이메일"
+
+#: app/auth/forms.py:20 app/auth/forms.py:43
+msgid "Repeat Password"
+msgstr "비밀번호 재확인"
+
+#: app/auth/forms.py:22 app/auth/routes.py:49
+#: app/templates/auth/register.html:5
+msgid "Register"
+msgstr "회원가입"
+
+#: app/auth/forms.py:27 app/main/forms.py:22
+msgid "Please use a different username."
+msgstr "이미 사용중인 사용자 이름입니다."
+
+#: app/auth/forms.py:32
+msgid "Please use a different email address."
+msgstr "이미 사용중인 이메일입니다."
+
+#: app/auth/forms.py:37 app/auth/forms.py:44
+msgid "Request Password Reset"
+msgstr "비밀번호 초기화 요청"
+
+#: app/auth/routes.py:21
+msgid "Invalid username or password"
+msgstr "유효하지 않은 사용자 이름 (또는) 비밀번호 입니다."
+
+#: app/auth/routes.py:47
+msgid "Congratulations, you are now a registered user!"
+msgstr "축하합니다. 회원가입이 완료되었습니다!"
+
+#: app/auth/routes.py:62
+msgid "Check your email for the instructions to reset your password"
+msgstr "비밀번호 초기화 이메일이 발송되었습니다."
+
+#: app/auth/routes.py:65 app/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr "비밀번호 초기화"
+
+#: app/auth/routes.py:79
+msgid "Your password has been reset."
+msgstr "비밀번호가 초기화되었습니다."
+
+#: app/main/forms.py:10
+msgid "About me"
+msgstr "자기소개"
+
+#: app/main/forms.py:12 app/main/forms.py:28
+msgid "Submit"
+msgstr "등록"
+
+#: app/main/forms.py:26
+msgid "Say something"
+msgstr "무슨 생각을 하고 계신가요?"
+
+#: app/main/routes.py:35
+msgid "Your post is now live!"
+msgstr "포스트가 업로드되었습니다."
+
+#: app/main/routes.py:44 app/templates/base.html:23
+msgid "Home"
+msgstr "홈"
+
+#: app/main/routes.py:59 app/templates/base.html:24
+msgid "Explore"
+msgstr "탐색"
+
+#: app/main/routes.py:76 app/templates/base.html:30
+msgid "Profile"
+msgstr "프로필"
+
+#: app/main/routes.py:87
+msgid "Your changes have been saved."
+msgstr "프로필 수정 사항이 저장되었습니다."
+
+#: app/main/routes.py:92 app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr "프로필 수정"
+
+#: app/main/routes.py:101 app/main/routes.py:117
+msgid "User {} not found."
+msgstr "유저 {}(이)가 발견되지 않습니다."
+
+#: app/main/routes.py:104
+msgid "You cannot follow yourself!"
+msgstr "본인 스스로를 팔로우할 수 없습니다!"
+
+#: app/main/routes.py:108
+msgid "You are following {}!"
+msgstr "{}을(를) 팔로우하였습니다!"
+
+#: app/main/routes.py:120
+msgid "You cannot unfollow yourself!"
+msgstr "본인 스스로를 팔로우 해제할 수 없습니다!"
+
+#: app/main/routes.py:124
+msgid "You are not following {}."
+msgstr "{}을(를) 팔로우를 해제하였습니다."
 
 #: app/templates/_post.html:14
 #, python-format
@@ -204,22 +189,6 @@ msgstr "다음 페이지"
 msgid "Older posts"
 msgstr "이전 페이지"
 
-#: app/templates/login.html:33
-msgid "New User?"
-msgstr "아직 계정이 없으신가요?"
-
-#: app/templates/login.html:35
-msgid "Click to Register!"
-msgstr "회원가입하기"
-
-#: app/templates/login.html:38
-msgid "Forgot Your Password?"
-msgstr "비밀번호를 잊으셨나요?"
-
-#: app/templates/login.html:40
-msgid "Click to Reset It"
-msgstr "초기화하기"
-
 #: app/templates/user.html:8
 msgid "User"
 msgstr "사용자"
@@ -239,4 +208,36 @@ msgstr "팔로잉"
 #: app/templates/user.html:15
 msgid "Edit your profile"
 msgstr "프로필 수정"
+
+#: app/templates/auth/login.html:33
+msgid "New User?"
+msgstr "아직 계정이 없으신가요?"
+
+#: app/templates/auth/login.html:35
+msgid "Click to Register!"
+msgstr "회원가입하기"
+
+#: app/templates/auth/login.html:38
+msgid "Forgot Your Password?"
+msgstr "비밀번호를 잊으셨나요?"
+
+#: app/templates/auth/login.html:40
+msgid "Click to Reset It"
+msgstr "초기화하기"
+
+#: app/templates/errors/404.html:4
+msgid "File Not Found"
+msgstr "페이지를 찾을 수 없습니다."
+
+#: app/templates/errors/404.html:5 app/templates/errors/500.html:6
+msgid "Back"
+msgstr "뒤로가기"
+
+#: app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "예상치 못한 오류가 발생했습니다."
+
+#: app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "관리자에게 오류가 전달되었고 곧 수정될 예정입니다. 불편함을 드려 죄송합니다!"
 
