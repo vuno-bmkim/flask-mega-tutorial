@@ -14,4 +14,4 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['bmkim@vuno.co']
     POSTS_PER_PAGE = 25
-    LANGUAGES = ['en', 'es', 'ko'] # 한국어 지원 추가
+    LANGUAGES = ['en', 'ko']  # es대신 ko 지원
