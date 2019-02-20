@@ -15,3 +15,4 @@ class Config(object):
     ADMINS = ['bmkim@vuno.co']
     POSTS_PER_PAGE = 25
     LANGUAGES = ['en', 'ko']  # es대신 ko 지원
+    MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
