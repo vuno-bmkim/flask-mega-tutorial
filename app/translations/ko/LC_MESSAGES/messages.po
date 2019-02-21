@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-20 17:17+0900\n"
+"POT-Creation-Date: 2019-02-21 18:28+0900\n"
 "PO-Revision-Date: 2019-02-19 19:46+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -107,7 +107,7 @@ msgstr "등록"
 msgid "Say something"
 msgstr "무슨 생각을 하고 계신가요?"
 
-#: app/main/forms.py:33 app/main/routes.py:149
+#: app/main/forms.py:33 app/main/routes.py:156
 msgid "Search"
 msgstr "검색"
 
@@ -127,40 +127,40 @@ msgstr "탐색"
 msgid "Profile"
 msgstr "프로필"
 
-#: app/main/routes.py:88
+#: app/main/routes.py:95
 msgid "Your changes have been saved."
 msgstr "프로필 수정 사항이 저장되었습니다."
 
-#: app/main/routes.py:93 app/templates/edit_profile.html:5
+#: app/main/routes.py:100 app/templates/edit_profile.html:5
 msgid "Edit Profile"
 msgstr "프로필 수정"
 
-#: app/main/routes.py:102 app/main/routes.py:118
+#: app/main/routes.py:109 app/main/routes.py:125
 msgid "User {} not found."
 msgstr "유저 {}(이)가 발견되지 않습니다."
 
-#: app/main/routes.py:105
+#: app/main/routes.py:112
 msgid "You cannot follow yourself!"
 msgstr "본인 스스로를 팔로우할 수 없습니다!"
 
-#: app/main/routes.py:109
+#: app/main/routes.py:116
 msgid "You are following {}!"
 msgstr "{}을(를) 팔로우하였습니다!"
 
-#: app/main/routes.py:121
+#: app/main/routes.py:128
 msgid "You cannot unfollow yourself!"
 msgstr "본인 스스로를 팔로우 해제할 수 없습니다!"
 
-#: app/main/routes.py:125
+#: app/main/routes.py:132
 msgid "You are not following {}."
 msgstr "{}을(를) 팔로우를 해제하였습니다."
 
-#: app/templates/_post.html:14
+#: app/templates/_post.html:16
 #, python-format
 msgid "%(username)s said %(when)s"
 msgstr "%(username)s님이 %(when)s에 게시하였습니다."
 
-#: app/templates/_post.html:25
+#: app/templates/_post.html:27
 msgid "Translate"
 msgstr "변역하기"
 
@@ -209,7 +209,7 @@ msgstr "다음 검색결과"
 msgid "User"
 msgstr "사용자"
 
-#: app/templates/user.html:11
+#: app/templates/user.html:11 app/templates/user_popup.html:9
 msgid "Last seen on"
 msgstr "최근 접속 시간"
 
@@ -224,6 +224,24 @@ msgstr "팔로잉"
 #: app/templates/user.html:15
 msgid "Edit your profile"
 msgstr "프로필 수정"
+
+#: app/templates/user_popup.html:11
+#, python-format
+msgid "%(count)d followers"
+msgstr "%(count)d 팔로워"
+
+#: app/templates/user_popup.html:11
+#, python-format
+msgid "%(count)d following"
+msgstr "%(count)d 팔로잉"
+
+#: app/templates/user_popup.html:14
+msgid "Follow"
+msgstr "팔로우"
+
+#: app/templates/user_popup.html:16
+msgid "Unfollow"
+msgstr "언팔로우"
 
 #: app/templates/auth/login.html:33
 msgid "New User?"
