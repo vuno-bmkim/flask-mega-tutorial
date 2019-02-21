@@ -6,8 +6,12 @@ WORKDIR /home/microblog
 
 COPY requirements.txt requirements.txt
 RUN python -m venv venv
-RUN venv/bin/pip install -r requirements.txt
-RUN venv/bin/pip install gunicorn pymysql
+
+RUN apk add --no-cache --virtual .build-deps gcc musl-dev 
+RUN venv/bin/pip3 install -r requirements.txt
+RUN apk del .build-deps gcc musl-dev
+
+RUN venv/bin/pip3 install gunicorn pymysql
 
 COPY app app
 COPY migrations migrations
