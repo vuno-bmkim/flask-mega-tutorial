@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-21 18:28+0900\n"
+"POT-Creation-Date: 2019-02-22 10:54+0900\n"
 "PO-Revision-Date: 2019-02-19 19:46+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ko\n"
@@ -99,7 +99,7 @@ msgstr "비밀번호가 초기화되었습니다."
 msgid "About me"
 msgstr "자기소개"
 
-#: app/main/forms.py:13 app/main/forms.py:29
+#: app/main/forms.py:13 app/main/forms.py:29 app/main/forms.py:46
 msgid "Submit"
 msgstr "등록"
 
@@ -110,6 +110,10 @@ msgstr "무슨 생각을 하고 계신가요?"
 #: app/main/forms.py:33 app/main/routes.py:156
 msgid "Search"
 msgstr "검색"
+
+#: app/main/forms.py:44
+msgid "Message"
+msgstr "메시지"
 
 #: app/main/routes.py:36
 msgid "Your post is now live!"
@@ -123,7 +127,7 @@ msgstr "홈"
 msgid "Explore"
 msgstr "탐색"
 
-#: app/main/routes.py:77 app/templates/base.html:39
+#: app/main/routes.py:77 app/templates/base.html:50
 msgid "Profile"
 msgstr "프로필"
 
@@ -144,16 +148,26 @@ msgid "You cannot follow yourself!"
 msgstr "본인 스스로를 팔로우할 수 없습니다!"
 
 #: app/main/routes.py:116
-msgid "You are following {}!"
-msgstr "{}을(를) 팔로우하였습니다!"
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "%(username)s을(를) 팔로우하였습니다!"
 
 #: app/main/routes.py:128
 msgid "You cannot unfollow yourself!"
 msgstr "본인 스스로를 팔로우 해제할 수 없습니다!"
 
 #: app/main/routes.py:132
-msgid "You are not following {}."
-msgstr "{}을(를) 팔로우를 해제하였습니다."
+#, python-format
+msgid "You are not following %(username)s."
+msgstr "%(username)s을(를) 팔로우 해제하였습니다."
+
+#: app/main/routes.py:171
+msgid "Your message has been sent."
+msgstr "메시지가 전송되었습니다."
+
+#: app/main/routes.py:173
+msgid "Send Message"
+msgstr "메시지 보내기"
 
 #: app/templates/_post.html:16
 #, python-format
@@ -172,11 +186,15 @@ msgstr "Microblog에 오신 것을 환영합니다."
 msgid "Login"
 msgstr "로그인"
 
-#: app/templates/base.html:40
+#: app/templates/base.html:41 app/templates/messages.html:4
+msgid "Messages"
+msgstr "메시지"
+
+#: app/templates/base.html:51
 msgid "Logout"
 msgstr "로그아웃"
 
-#: app/templates/base.html:77
+#: app/templates/base.html:88
 msgid "Error: Could not contact server."
 msgstr "서버가 응답하지 않습니다."
 
@@ -185,13 +203,21 @@ msgstr "서버가 응답하지 않습니다."
 msgid "Hi, %(username)s!"
 msgstr "안녕하세요, %(username)s님!"
 
-#: app/templates/index.html:28 app/templates/user.html:31
+#: app/templates/index.html:28 app/templates/user.html:39
 msgid "Newer posts"
 msgstr "다음 페이지"
 
-#: app/templates/index.html:33 app/templates/user.html:36
+#: app/templates/index.html:33 app/templates/user.html:44
 msgid "Older posts"
 msgstr "이전 페이지"
+
+#: app/templates/messages.html:12
+msgid "Newer messages"
+msgstr "다음 메시지"
+
+#: app/templates/messages.html:17
+msgid "Older messages"
+msgstr "이전 메시지"
 
 #: app/templates/search.html:4
 msgid "Search Results"
@@ -204,6 +230,11 @@ msgstr "이전 검색결과"
 #: app/templates/search.html:18
 msgid "Next results"
 msgstr "다음 검색결과"
+
+#: app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr "%(recipient)s에게 메세지 보내기"
 
 #: app/templates/user.html:8
 msgid "User"
@@ -225,6 +256,18 @@ msgstr "팔로잉"
 msgid "Edit your profile"
 msgstr "프로필 수정"
 
+#: app/templates/user.html:17 app/templates/user_popup.html:14
+msgid "Follow"
+msgstr "팔로우"
+
+#: app/templates/user.html:19 app/templates/user_popup.html:16
+msgid "Unfollow"
+msgstr "언팔로우"
+
+#: app/templates/user.html:25
+msgid "Send private message"
+msgstr "메시지 보내기"
+
 #: app/templates/user_popup.html:11
 #, python-format
 msgid "%(count)d followers"
@@ -234,14 +277,6 @@ msgstr "%(count)d 팔로워"
 #, python-format
 msgid "%(count)d following"
 msgstr "%(count)d 팔로잉"
-
-#: app/templates/user_popup.html:14
-msgid "Follow"
-msgstr "팔로우"
-
-#: app/templates/user_popup.html:16
-msgid "Unfollow"
-msgstr "언팔로우"
 
 #: app/templates/auth/login.html:33
 msgid "New User?"
