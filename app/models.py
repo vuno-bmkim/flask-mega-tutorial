@@ -79,8 +79,11 @@ class User(PaginatedAPIMixin, UserMixin, db.Model):
         self.password_hash = generate_password_hash(password)
 
     def check_password(self, password):
-        # forms를 통해 User 생성시 password없을 가능성 없지만,
-        # flask shell을 통해 User 생성시 password가 없어 에러 발생 가능
+        """
+        forms를 통해 User 생성시 password없을 가능성 없지만,
+        flask shell을 통해 User 생성시 password가 없어 에러 발생 가능하여
+        해당 부분 코드 추가
+        """
         if self.password_hash is None:
             print("User {} doesn't have password_hash".format(self.username))
             return False
@@ -182,6 +185,11 @@ class User(PaginatedAPIMixin, UserMixin, db.Model):
         now = datetime.utcnow()
         if self.token and self.token_expiration > now + timedelta(seconds=60):
             return self.token
+        """
+        랜덤하게 token을 생성하였으나 token은 unique해야 하므로,
+        기존에 unique한 username을 사용하여 token을 생성하던지
+        token을 db에 저장하기 전에 기존 db에 동일한 token이 존재하는지 확인 후 저장해야할 것으로 보임
+        """
         self.token = base64.b64encode(os.urandom(24)).decode('utf-8')
         self.token_expiration = now + timedelta(seconds=expires_in)
         db.session.add(self)
